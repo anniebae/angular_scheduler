@@ -6,7 +6,6 @@ angular.module('scheduleApp', ['firebase'])
   var fb = $firebase(ref);
 
   var syncObject = fb.$asObject();
-
   syncObject.$bindTo($scope, 'days');
 
 });
